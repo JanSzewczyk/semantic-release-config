@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/JanSzewczyk/semantic-release-config/compare/v1.5.7...v2.0.0) (2024-11-28)
+
+### ⚠ BREAKING CHANGES
+
+* Change package name
+
+### Features
+
+* **release-config:** update release configuration ([890d21e](https://github.com/JanSzewczyk/semantic-release-config/commit/890d21e043a988c1e718ecd854c50750d4d95c05))
+* Update package name ([99f3d01](https://github.com/JanSzewczyk/semantic-release-config/commit/99f3d011ed8c50b2d124df0d5ab4753a9a0b2dff))
+
+### Bug Fixes
+
+* **semantic-release:** add `conventional-changelog-conventionalcommits` package ([930afeb](https://github.com/JanSzewczyk/semantic-release-config/commit/930afebe01fb78d3177eabcfc2cc4aef81cb9812))
+
 ## [1.5.7](https://github.com/JanSzewczyk/semantic-release-preset/compare/v1.5.6...v1.5.7) (2024-06-16)
 
 
