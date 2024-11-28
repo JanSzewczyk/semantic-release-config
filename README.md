@@ -19,7 +19,10 @@ Semantic-release shareable configuration to publish GitHub projects using GitHub
 
 # Features
 
-- Uses [Conventional Commits](https://www.conventionalcommits.org/) to generate [release notes](https://github.com/semantic-release/release-notes-generator), [changelogs](https://github.com/semantic-release/changelog) and [determine the version for new releases](https://github.com/semantic-release/commit-analyzer).
+- Uses [Conventional Commits](https://www.conventionalcommits.org/) to generate
+  [release notes](https://github.com/semantic-release/release-notes-generator),
+  [changelogs](https://github.com/semantic-release/changelog) and
+  [determine the version for new releases](https://github.com/semantic-release/commit-analyzer).
 - [Creates or updates a CHANGELOG.md file](https://github.com/semantic-release/changelog).
 - [Publishes to npm (optional)](https://github.com/semantic-release/npm).
 - [Creates a new release on GitHub](https://github.com/semantic-release/github)
@@ -30,7 +33,8 @@ Semantic-release shareable configuration to publish GitHub projects using GitHub
 
 ## Installation
 
-[@szum-tech/semantic-release-preset](https://www.npmjs.com/package/@szum-tech/semantic-release-preset) is available as an [npm package](https://www.npmjs.com/package/@szum-tech/semantic-release-preset).
+[@szum-tech/semantic-release-preset](https://www.npmjs.com/package/@szum-tech/semantic-release-preset) is available as
+an [npm package](https://www.npmjs.com/package/@szum-tech/semantic-release-preset).
 
 **npm:**
 
@@ -59,18 +63,23 @@ module.exports = {
 };
 ```
 
-The `branches` array is [mandatory](https://semantic-release.gitbook.io/semantic-release/usage/configuration#branches), and in most repositories you should put the default git branch here (`main`, or `master` if it's an older repository).
+The `branches` array is [mandatory](https://semantic-release.gitbook.io/semantic-release/usage/configuration#branches),
+and in most repositories you should put the default git branch here (`main`, or `master` if it's an older repository).
 
 ## Environment Variables Configuration
 
 Ensure that your CI configuration has the following environment variables set:
 
-- GITHUB_TOKEN: [A GitHub personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-- NPM_TOKEN: [A npm personal access token](https://www.npmjs.com/package/settings) (**optional** if you don't publish your project on npm)
+- GITHUB_TOKEN:
+  [A GitHub personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+- NPM_TOKEN: [A npm personal access token](https://www.npmjs.com/package/settings) (**optional** if you don't publish
+  your project on npm)
 
 ## Minimal GitHub Release workflow
 
-This is the bare minimum required steps to trigger a new release. This will push a new release every time an eligible commit is pushed to git. Check the opinionated flow to see how to trigger releases manually. Create `.github/workflows/publish.yml`:
+This is the bare minimum required steps to trigger a new release. This will push a new release every time an eligible
+commit is pushed to git. Check the opinionated flow to see how to trigger releases manually. Create
+`.github/workflows/publish.yml`:
 
 ```yaml
 name: Publish 🚀
@@ -111,7 +120,8 @@ jobs:
 
 # Changelog
 
-The [changelog](https://github.com/JanSzewczyk/semantic-release-preset/blob/main/CHANGELOG.md) is regularly updated to reflect what's changed in each new release.
+The [changelog](https://github.com/JanSzewczyk/semantic-release-preset/blob/main/CHANGELOG.md) is regularly updated to
+reflect what's changed in each new release.
 
 # License
 
