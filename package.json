@@ -1,5 +1,5 @@
 {
-  "name": "@szum-tech/semantic-release-preset",
+  "name": "@szum-tech/semantic-release-config",
   "version": "1.5.7",
   "description": "Recommended setup for releasing semantically using GitHub Actions workflows compliance with the Szum-Tech standards.",
   "keywords": [
@@ -15,13 +15,13 @@
     "github-publish",
     "release"
   ],
-  "homepage": "https://github.com/JanSzewczyk/semantic-release-preset#readme",
+  "homepage": "https://github.com/JanSzewczyk/semantic-release-config#readme",
   "bugs": {
-    "url": "https://github.com/JanSzewczyk/semantic-release-preset/issues"
+    "url": "https://github.com/JanSzewczyk/semantic-release-config/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JanSzewczyk/semantic-release-preset.git"
+    "url": "git+https://github.com/JanSzewczyk/semantic-release-config.git"
   },
   "license": "MIT",
   "author": "Szum-Tech <szum.tech@gmail.com>",
