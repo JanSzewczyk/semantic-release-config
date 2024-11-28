@@ -6,7 +6,6 @@
     "szum-tech",
     "Szum-Tech",
     "semantic-release",
-    "semantic-release-preset",
     "conventional-changelog",
     "semantic-release-config",
     "publish",
@@ -26,10 +25,16 @@
   },
   "license": "MIT",
   "author": "Szum-Tech <szum.tech@gmail.com>",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./with-npm": "./lib/with-npm.js",
+    "./without-npm": "./lib/without-npm.js"
+  },
   "files": [
-    "index.js",
-    "without-npm.js"
+    "lib/index.js",
+    "lib/with-npm.js",
+    "lib/without-npm.js"
   ],
   "scripts": {
     "prettier:check": "prettier --check .",
@@ -39,18 +44,18 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^10.0.6",
+    "@semantic-release/github": "^10.3.5",
     "@semantic-release/npm": "^12.0.1",
-    "@semantic-release/release-notes-generator": "^14.0.0"
+    "@semantic-release/release-notes-generator": "^14.0.1"
   },
   "devDependencies": {
-    "@szum-tech/prettier-config": "^1.3.4",
+    "@szum-tech/prettier-config": "^1.4.0",
     "@types/semantic-release": "^20.0.6",
-    "prettier": "^3.3.2",
-    "semantic-release": "^24.0.0"
+    "prettier": "^3.4.1",
+    "semantic-release": "^24.2.0"
   },
   "peerDependencies": {
-    "semantic-release": "^24.0.0"
+    "semantic-release": "^24.2.0"
   },
   "publishConfig": {
     "access": "public"
