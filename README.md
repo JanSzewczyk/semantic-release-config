@@ -1,4 +1,4 @@
-# @szum-tech/semantic-release-preset
+# @szum-tech/semantic-release-config
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/JanSzewczyk/semantic-release-preset)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/JanSzewczyk/semantic-release-preset)](https://github.com/JanSzewczyk/semantic-release-preset/pulls)
