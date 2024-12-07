@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.0.0...v2.1.0) (2024-12-07)
+
+### Features
+
+* move files to src dir & update config ([df67a18](https://github.com/JanSzewczyk/semantic-release-config/commit/df67a18a242cf341bfbc0e4f2441f25aabce87de))
+
+### Documentation
+
+* **README:** update README file with correct package name ([af03947](https://github.com/JanSzewczyk/semantic-release-config/commit/af0394750d80970b7b86fff42ef042f1db0b0ff1))
+
 ## [2.0.0](https://github.com/JanSzewczyk/semantic-release-config/compare/v1.5.7...v2.0.0) (2024-11-28)
 
 ### ⚠ BREAKING CHANGES
