@@ -27,14 +27,12 @@
   "author": "Szum-Tech <szum.tech@gmail.com>",
   "type": "module",
   "exports": {
-    ".": "./lib/index.js",
-    "./with-npm": "./lib/with-npm.js",
-    "./without-npm": "./lib/without-npm.js"
+    ".": "./src/index.js",
+    "./with-npm": "./src/with-npm.js",
+    "./without-npm": "./src/without-npm.js"
   },
   "files": [
-    "lib/index.js",
-    "lib/with-npm.js",
-    "lib/without-npm.js"
+    "src/**"
   ],
   "scripts": {
     "prettier:check": "prettier --check .",
@@ -44,14 +42,14 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^10.3.5",
+    "@semantic-release/github": "^11.0.1",
     "@semantic-release/npm": "^12.0.1",
     "@semantic-release/release-notes-generator": "^14.0.1",
     "conventional-changelog-conventionalcommits": "^8.0.0"
   },
   "devDependencies": {
     "@szum-tech/prettier-config": "^1.4.0",
-    "prettier": "^3.4.1",
+    "prettier": "^3.4.2",
     "semantic-release": "^24.2.0"
   },
   "peerDependencies": {
