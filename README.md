@@ -1,17 +1,17 @@
 # @szum-tech/semantic-release-config
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/JanSzewczyk/semantic-release-preset)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/JanSzewczyk/semantic-release-preset)](https://github.com/JanSzewczyk/semantic-release-preset/pulls)
-[![GitHub issues](https://img.shields.io/github/issues/JanSzewczyk/semantic-release-preset)](https://github.com/JanSzewczyk/semantic-release-preset/issues)
-![GitHub Repo stars](https://img.shields.io/github/stars/JanSzewczyk/semantic-release-preset?style=social)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/JanSzewczyk/semantic-release-config)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/JanSzewczyk/semantic-release-config)](https://github.com/JanSzewczyk/semantic-release-config/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/JanSzewczyk/semantic-release-config)](https://github.com/JanSzewczyk/semantic-release-config/issues)
+![GitHub Repo stars](https://img.shields.io/github/stars/JanSzewczyk/semantic-release-config?style=social)
 
-[![released](https://github.com/JanSzewczyk/semantic-release-preset/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/JanSzewczyk/semantic-release-preset/actions/workflows/publish.yml)
+[![released](https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/publish.yml)
 
-[![npm](https://img.shields.io/npm/v/@szum-tech/semantic-release-preset)](https://www.npmjs.com/package/@szum-tech/semantic-release-preset)
-![npm](https://img.shields.io/npm/dm/@szum-tech/semantic-release-preset)
+[![npm](https://img.shields.io/npm/v/@szum-tech/semantic-release-config)](https://www.npmjs.com/package/@szum-tech/semantic-release-config)
+![npm](https://img.shields.io/npm/dm/@szum-tech/semantic-release-config)
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/JanSzewczyk/semantic-release-preset/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/JanSzewczyk/semantic-release-config/blob/main/LICENSE)
 
 ---
 
@@ -39,13 +39,13 @@ an [npm package](https://www.npmjs.com/package/@szum-tech/semantic-release-prese
 **npm:**
 
 ```sh
-npm install -D @szum-tech/semantic-release-preset semantic-release @types/semantic-release
+npm install -D semantic-release @szum-tech/semantic-release-config
 ```
 
 **yarn:**
 
 ```sh
-yarn add -D @szum-tech/semantic-release-preset semantic-release @types/semantic-release
+yarn add -D semantic-release @szum-tech/semantic-release-config
 ```
 
 ## Setup release configuration file
@@ -56,7 +56,7 @@ First create `release.config.js` file in main project root and add configuration
 /** @type {import('semantic-release').Options} */
 module.exports = {
   branches: ["main"],
-  extends: "@szum-tech/semantic-release-preset"
+  extends: "@szum-tech/semantic-release-config"
   // OR
   // if you don't want to publish your project on npm, please use:
   // extends: "@szum-tech/semantic-release-preset/without-npm"
