@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.1.0...v2.1.1) (2024-12-07)
+
+### Bug Fixes
+
+* **deps:** fix `cross-spawn` security issue ([74a17b3](https://github.com/JanSzewczyk/semantic-release-config/commit/74a17b3bc900c2533d81bc8850fd7fd8774db12a))
+
 ## [2.1.0](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.0.0...v2.1.0) (2024-12-07)
 
 ### Features
