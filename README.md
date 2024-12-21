@@ -232,7 +232,7 @@ jobs:
 
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node 🟢
         uses: actions/setup-node@v4
