@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.1.1...v2.2.0) (2024-12-22)
+
+### Features
+
+* **config:** update notes generator types configuration ([a2df9db](https://github.com/JanSzewczyk/semantic-release-config/commit/a2df9db607a632a5b0aa1590fcc0e3d9ab6310f0))
+
+### Documentation
+
+* **README:** update `README` docs file with actual package documentation ([9d76a49](https://github.com/JanSzewczyk/semantic-release-config/commit/9d76a495f6938ce4928255d4fd1e2219993e5670))
+
+### Build System
+
+* **deps:** upgrade `@semantic-release/release-notes-generator` to v14.0.2 ([345a722](https://github.com/JanSzewczyk/semantic-release-config/commit/345a722519b83c200f86ab82c5453325d0c90511))
+* **eslint:** set up `eslint` in project ([90161ff](https://github.com/JanSzewczyk/semantic-release-config/commit/90161ff67d9609366f5ac3194df4ebab88e2abec))
+* **tsup:** setup `tsup` configuration to support ESM and CJS formats ([8830ad3](https://github.com/JanSzewczyk/semantic-release-config/commit/8830ad366d2cd2d72e9ed489387ce87f69e921df))
+
+### Continuous Integration
+
+* **dependabot:** update maintain dependencies for npm group name ([d5d2ba0](https://github.com/JanSzewczyk/semantic-release-config/commit/d5d2ba0fc7b3b6f4379f26e85a8cb160339fa9c1))
+* **pr-check.yml:** add `build` job to `PR Checks ✅` GH action ([7414641](https://github.com/JanSzewczyk/semantic-release-config/commit/7414641aaf7b6ba3859291b388ae637ccd5ed96d))
+* **pr-check.yml:** add `Eslint ⬣` job to `PR Checks ✅` GH action ([a4ab958](https://github.com/JanSzewczyk/semantic-release-config/commit/a4ab9582b17c6b384501bb106fea5f1f7fa5f5a8))
+* **publish.yml:** add `Build 🏗️` step to `Publish 🚀` GH action ([924a9c2](https://github.com/JanSzewczyk/semantic-release-config/commit/924a9c282c509c8d96ddecec0325f5177908ac99))
+
 ## [2.1.1](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.1.0...v2.1.1) (2024-12-07)
 
 ### Bug Fixes
