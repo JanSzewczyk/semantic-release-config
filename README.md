@@ -115,7 +115,7 @@ export default {
 - Via `release.config.cjs` file:
 
 ```js
-module.exports = required("@szum-tech/semantic-release-config/with-npm");
+module.exports = require("@szum-tech/semantic-release-config/with-npm");
 // OR
 // module.exports = required("@szum-tech/semantic-release-config/without-npm");
 // if you don't want to publish your project on npm
