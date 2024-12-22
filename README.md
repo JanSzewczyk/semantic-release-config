@@ -252,8 +252,8 @@ jobs:
 #        run: yarn semantic-release
 ```
 
-> [!TIP] See also
-> [publish.yml](https://github.com/JanSzewczyk/semantic-release-config/blob/main/.github/workflows/publish.yml) file.
+> [!TIP]
+> See also [publish.yml](https://github.com/JanSzewczyk/semantic-release-config/blob/main/.github/workflows/publish.yml) file.
 
 ## Changelog
 
