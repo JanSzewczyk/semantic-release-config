@@ -6,6 +6,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/JanSzewczyk/semantic-release-config?style=social)
 
 [![released](https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/publish.yml)
+[![CodeQL](https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/codeql.yml/badge.svg)](https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/codeql.yml)
 
 [![npm](https://img.shields.io/npm/v/@szum-tech/semantic-release-config)](https://www.npmjs.com/package/@szum-tech/semantic-release-config)
 ![npm](https://img.shields.io/npm/dm/@szum-tech/semantic-release-config)
@@ -33,20 +34,21 @@ Semantic-release shareable configuration to publish GitHub projects using GitHub
 ## 📖 Table of Contents
 
 <!-- TOC -->
-
-- [@szum-tech/semantic-release-config](#szum-techsemantic-release-config)
-  - [📚 Features](#-features)
-  - [📖 Table of Contents](#-table-of-contents)
-  - [🎯 Getting Started](#-getting-started)
-    - [Installation](#installation)
-    - [Configuration](#configuration)
-      - [Predefined configs](#predefined-configs)
-      - [Configuration Builder](#configuration-builder)
-  - [💻 Environment Variables Configuration](#-environment-variables-configuration)
-  - [🚀 Minimal GitHub Release workflow](#-minimal-github-release-workflow)
-  - [Changelog](#changelog)
-  - [📜 License](#-license)
-  <!-- TOC -->
+* [@szum-tech/semantic-release-config](#szum-techsemantic-release-config)
+  * [📚 Features](#-features)
+  * [📖 Table of Contents](#-table-of-contents)
+  * [🎯 Getting Started](#-getting-started)
+    * [Installation](#installation)
+    * [Configuration](#configuration)
+      * [Predefined configs](#predefined-configs)
+      * [Configuration Builder](#configuration-builder)
+  * [💻 Environment Variables Configuration](#-environment-variables-configuration)
+  * [🚀 Minimal GitHub Release workflow](#-minimal-github-release-workflow)
+  * [Developer Info](#developer-info)
+    * [Dependencies](#dependencies)
+  * [Changelog](#changelog)
+  * [📜 License](#-license)
+<!-- TOC -->
 
 ## 🎯 Getting Started
 
@@ -55,16 +57,18 @@ Semantic-release shareable configuration to publish GitHub projects using GitHub
 [@szum-tech/semantic-release-config](https://www.npmjs.com/package/@szum-tech/semantic-release-config) is available as
 an [npm package](https://www.npmjs.com/package/@szum-tech/semantic-release-config).
 
-**npm:**
+```shell
+# NPM
+npm install --save-dev semantic-release @szum-tech/semantic-release-config
 
-```sh
-npm install -D semantic-release @szum-tech/semantic-release-config
-```
-
-**yarn:**
-
-```sh
+# YARN
 yarn add -D semantic-release @szum-tech/semantic-release-config
+
+# PNPM
+pnpm add --save-dev semantic-release @szum-tech/semantic-release-config
+
+# BUN
+bun add --dev semantic-release @szum-tech/semantic-release-config
 ```
 
 ### Configuration
@@ -162,7 +166,7 @@ module.exports = {
 
 #### Configuration Builder
 
-@szum-tech/semantic-release-config zwraca rónież funkcję `getConfig`:
+`@szum-tech/semantic-release-config` also returns the `getConfig` function:
 
 ```js
 // For *.mjs
@@ -175,7 +179,7 @@ const { getConfig } = require("@szum-tech/semantic-release-config");
 This function takes an argument `configurationOptions`, where the is located `features` variable - defining configurable
 features.
 
-**`Features` Table**
+**Features Table**
 
 | Name |                Description                |  Type   | Default Value |
 | :--: | :---------------------------------------: | :-----: | :-----------: |
@@ -254,6 +258,18 @@ jobs:
 
 > [!TIP]
 > See also [publish.yml](https://github.com/JanSzewczyk/semantic-release-config/blob/main/.github/workflows/publish.yml) file.
+
+## Developer Info
+
+### Dependencies
+
+![NPM (prod) Dependency Version](https://img.shields.io/npm/dependency-version/%40szum-tech%2Fsemantic-release-config/%40semantic-release%2Fchangelog)
+![NPM (prod) Dependency Version](https://img.shields.io/npm/dependency-version/%40szum-tech%2Fsemantic-release-config/%40semantic-release%2Fcommit-analyzer)
+![NPM (prod) Dependency Version](https://img.shields.io/npm/dependency-version/%40szum-tech%2Fsemantic-release-config/%40semantic-release%2Fgit)
+![NPM (prod) Dependency Version](https://img.shields.io/npm/dependency-version/%40szum-tech%2Fsemantic-release-config/%40semantic-release%2Fgithub)
+![NPM (prod) Dependency Version](https://img.shields.io/npm/dependency-version/%40szum-tech%2Fsemantic-release-config/%40semantic-release%2Fnpm)
+![NPM (prod) Dependency Version](https://img.shields.io/npm/dependency-version/%40szum-tech%2Fsemantic-release-config/%40semantic-release%2Frelease-notes-generator)
+![NPM (prod) Dependency Version](https://img.shields.io/npm/dependency-version/%40szum-tech%2Fsemantic-release-config/conventional-changelog-conventionalcommits)
 
 ## Changelog
 
