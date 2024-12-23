@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.2.0...v2.2.1) (2024-12-23)
+
+### Bug Fixes
+
+* **docs:** update documentation ([b012180](https://github.com/JanSzewczyk/semantic-release-config/commit/b01218098b027a5d40fcebe036cdd8b601f4da8b))
+
+### Documentation
+
+* **README:** fix code examples ([30a0bc7](https://github.com/JanSzewczyk/semantic-release-config/commit/30a0bc7c6773b2471edab80d062b1aa8b3fd7a6f))
+* **README:** fux tip ([bf66863](https://github.com/JanSzewczyk/semantic-release-config/commit/bf668636212011d549d0ede1af5c6afb55387fef))
+
 ## [2.2.0](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.1.1...v2.2.0) (2024-12-22)
 
 ### Features
