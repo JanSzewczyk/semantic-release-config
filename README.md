@@ -1,22 +1,30 @@
-# @szum-tech/semantic-release-config
-
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/JanSzewczyk/semantic-release-config)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/JanSzewczyk/semantic-release-config)](https://github.com/JanSzewczyk/semantic-release-config/pulls)
-[![GitHub issues](https://img.shields.io/github/issues/JanSzewczyk/semantic-release-config)](https://github.com/JanSzewczyk/semantic-release-config/issues)
-![GitHub Repo stars](https://img.shields.io/github/stars/JanSzewczyk/semantic-release-config?style=social)
-
-[![released](https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/publish.yml)
-[![CodeQL](https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/codeql.yml/badge.svg)](https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/codeql.yml)
-
-[![npm](https://img.shields.io/npm/v/@szum-tech/semantic-release-config)](https://www.npmjs.com/package/@szum-tech/semantic-release-config)
-![npm](https://img.shields.io/npm/dm/@szum-tech/semantic-release-config)
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/JanSzewczyk/semantic-release-config/blob/main/LICENSE)
+<h1 align="center">@szum-tech/semantic-release-config</h1>
+<p align="center"><a href="https://semantic-release.gitbook.io/semantic-release">Semantic-release</a> shareable configuration.</p>
+<br>
+<div align="center" style="display: flex; flex-direction: column; gap: 1em;">
+    <div style="display: flex; gap: .5em; justify-content: center">
+        <a href="https://github.com/JanSzewczyk/semantic-release-config"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/JanSzewczyk/semantic-release-config"></a>
+        <a href="https://github.com/JanSzewczyk/semantic-release-config/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/JanSzewczyk/semantic-release-config"></a>
+        <a href="https://github.com/JanSzewczyk/semantic-release-config/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/JanSzewczyk/semantic-release-config"></a>
+        <a href="https://github.com/JanSzewczyk/semantic-release-config"><img alt="Github stars" src="https://img.shields.io/github/stars/JanSzewczyk/semantic-release-config?style=social"></a>
+    </div>
+    <div style="display: flex; gap: .5em; justify-content: center">
+        <a href="https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/publish.yml"><img alt="Publish action" src="https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/publish.yml/badge.svg?branch=main"></a>
+        <a href="https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/codeql.yml"><img alt="CodeQL action" src="https://github.com/JanSzewczyk/semantic-release-config/actions/workflows/codeql.yml/badge.svg"></a>
+    </div>
+    <div style="display: flex; gap: .5em; justify-content: center">
+        <a href="https://www.npmjs.com/package/@szum-tech/semantic-release-config"><img alt="NPM version" src="https://img.shields.io/npm/v/@szum-tech/semantic-release-config"></a>
+        <a href="https://www.npmjs.com/package/@szum-tech/semantic-release-config"><img alt="Downloads" src="https://img.shields.io/npm/dm/@szum-tech/semantic-release-config"></a>
+    </div>
+</div>
+<br>
+<p align="center">
+    Setting up a Semantic-release configuration should be easier.
+    <br/>
+    <a href="https://semantic-release.gitbook.io/semantic-release">Semantic-release</a> shareable configuration to publish GitHub projects using GitHub Actions workflows.
+</p>
 
 ---
-
-Semantic-release shareable configuration to publish GitHub projects using GitHub Actions workflows.
 
 ## 📚 Features
 
@@ -34,25 +42,24 @@ Semantic-release shareable configuration to publish GitHub projects using GitHub
 ## 📖 Table of Contents
 
 <!-- TOC -->
-* [@szum-tech/semantic-release-config](#szum-techsemantic-release-config)
   * [📚 Features](#-features)
   * [📖 Table of Contents](#-table-of-contents)
   * [🎯 Getting Started](#-getting-started)
-    * [Installation](#installation)
+    * [⚙️ Installation](#-installation)
     * [Configuration](#configuration)
       * [Predefined configs](#predefined-configs)
       * [Configuration Builder](#configuration-builder)
   * [💻 Environment Variables Configuration](#-environment-variables-configuration)
   * [🚀 Minimal GitHub Release workflow](#-minimal-github-release-workflow)
-  * [Developer Info](#developer-info)
+  * [🛠️ Developer Info](#-developer-info)
     * [Dependencies](#dependencies)
-  * [Changelog](#changelog)
+  * [📓 Changelog](#-changelog)
   * [📜 License](#-license)
 <!-- TOC -->
 
 ## 🎯 Getting Started
 
-### Installation
+### ⚙️ Installation
 
 [@szum-tech/semantic-release-config](https://www.npmjs.com/package/@szum-tech/semantic-release-config) is available as
 an [npm package](https://www.npmjs.com/package/@szum-tech/semantic-release-config).
@@ -225,41 +232,36 @@ on:
   push:
     branches: [main]
 
+env:
+  NODE_VERSION: 22.x
+
 jobs:
   publish:
     name: Publish 🚀
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node-version: [22.x]
-        os: [ubuntu-latest]
-
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code 📚
         uses: actions/checkout@v4
-
       - name: Set up Node 🟢
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
-
       - name: Install packages ⚙️
         run: npm ci
-      #        run: yarn install --frozen-lockfile
-
+      - name: Build 🏗️
+        run: npm run build
       - name: Publish package 🚀
+        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # OPTIONAL if you don't publish your project on npm
-        run: npx semantic-release
-#        run: yarn semantic-release
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 ```
 
 > [!TIP]
 > See also [publish.yml](https://github.com/JanSzewczyk/semantic-release-config/blob/main/.github/workflows/publish.yml) file.
 
-## Developer Info
+## 🛠️ Developer Info
 
 ### Dependencies
 
@@ -271,7 +273,7 @@ jobs:
 ![NPM (prod) Dependency Version](https://img.shields.io/npm/dependency-version/%40szum-tech%2Fsemantic-release-config/%40semantic-release%2Frelease-notes-generator)
 ![NPM (prod) Dependency Version](https://img.shields.io/npm/dependency-version/%40szum-tech%2Fsemantic-release-config/conventional-changelog-conventionalcommits)
 
-## Changelog
+## 📓 Changelog
 
 The [changelog](https://github.com/JanSzewczyk/semantic-release-config/blob/main/CHANGELOG.md) is regularly updated to
 reflect what's changed in each new release.
