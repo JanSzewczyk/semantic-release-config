@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.2](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.2.1...v2.2.2) (2025-01-25)
+
+### Bug Fixes
+
+* **release:** cut 2.2.2 ([5411af4](https://github.com/JanSzewczyk/semantic-release-config/commit/5411af45eadfaa6a72aeb3615e485d80ad27d8ac))
+
+### Documentation
+
+* **CHANGELOG:** clear Changelog file ([1be977d](https://github.com/JanSzewczyk/semantic-release-config/commit/1be977d2c15cec1d356912a7c1e22ce9eed5ac70))
+* **LICENCE:** update copyright copy ([6d638d8](https://github.com/JanSzewczyk/semantic-release-config/commit/6d638d8995fe10161b9429cc1d18804d0626848f))
+* **README:** update README file documentation ([10ba9e7](https://github.com/JanSzewczyk/semantic-release-config/commit/10ba9e746c0cd7a01ad677229260b1ce748506e5))
+
+### Build System
+
+* **deps:** bump deps ([fffd7ca](https://github.com/JanSzewczyk/semantic-release-config/commit/fffd7ca93fd3f5de424ab92c020f94d9223add45))
+
+### Continuous Integration
+
+* **gh-action:** update Github actions ([6ba8284](https://github.com/JanSzewczyk/semantic-release-config/commit/6ba8284650d066fb19c707b13a303324165c4352))
+
 ## [2.2.1](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.2.0...v2.2.1) (2024-12-23)
 
 ### Bug Fixes
