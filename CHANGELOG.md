@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.0](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.2.2...v2.3.0) (2025-03-02)
+
+### Features
+
+* **mdx:** add support for mdx `CHANGELOG` file ([65ff7fe](https://github.com/JanSzewczyk/semantic-release-config/commit/65ff7fe3e4aec0def15fe59d0afe2c107b6601b7))
+
+### Documentation
+
+* **ISSUE_TEMPLATES:** add issues templates ([5844135](https://github.com/JanSzewczyk/semantic-release-config/commit/584413582b5f367618c724266bb14f2c7a575659))
+* **PULL_REQUEST_TEMPLATE:** add `PULL_REQUEST_TEMPLATE.md` file ([b9aa7f3](https://github.com/JanSzewczyk/semantic-release-config/commit/b9aa7f38c3a7bab2a0e0448e4c8e3eedd52db019))
+
+### Build System
+
+* **deps:** bump deps ([6678f8d](https://github.com/JanSzewczyk/semantic-release-config/commit/6678f8d06ed274159bc8e06a1d4130552c9251d1))
+
 ## [2.2.2](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.2.1...v2.2.2) (2025-01-25)
 
 ### Bug Fixes
