@@ -3,9 +3,10 @@
  * @param {Object} configurationOptions The configuration options.
  * @param {Object} configurationOptions.features The configurable features.
  * @param {boolean} [configurationOptions.features.npmPublish=false] NPM publish flag.
+ * @param {boolean} [configurationOptions.features.mdx=false] MDX CHANGELOG flag.
  * @returns {import('semantic-release').Options}
  */
-export function getConfig({ features: { npmPublish = false } = {} } = {}) {
+export function getConfig({ features: { npmPublish = false, mdx = false } = {} } = {}) {
   return {
     branches: ["main"],
     plugins: [
@@ -39,7 +40,8 @@ export function getConfig({ features: { npmPublish = false } = {} } = {}) {
       [
         "@semantic-release/changelog",
         {
-          changelogTitle: `<!-- markdownlint-disable --><!-- textlint-disable -->
+          changelogFile: `CHANGELOG.${mdx ? "mdx" : "md"}`,
+          changelogTitle: `${!mdx ? "<!-- markdownlint-disable --><!-- textlint-disable -->" : ""}
 # 📓 Changelog
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.`
@@ -50,7 +52,7 @@ All notable changes to this project will be documented in this file. See
         "@semantic-release/git",
         {
           message: "release: ${nextRelease.gitTag} [skip ci]\n\n${nextRelease.notes}",
-          assets: ["CHANGELOG.md", "package.json"]
+          assets: [`CHANGELOG.${mdx ? "mdx" : "md"}`, "package.json"]
         }
       ],
       "@semantic-release/github"
