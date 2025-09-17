@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.2](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.3.1...v2.3.2) (2025-09-17)
+
+### Bug Fixes
+
+* **deps:** update semantic-release and related dependencies ([136ad83](https://github.com/JanSzewczyk/semantic-release-config/commit/136ad83f07b00c059cdb7ecd21b6b3215183c3ec))
+
+### Build System
+
+* **deps:** bump the github-dependencies group across 1 directory with 2 updates ([498c5a4](https://github.com/JanSzewczyk/semantic-release-config/commit/498c5a463a4bcfefc64681b7f7fd94519cedd77d))
+
+### Continuous Integration
+
+* **dependabot:** change dependabot name ([310e5e1](https://github.com/JanSzewczyk/semantic-release-config/commit/310e5e1d13cc873c9790c5425d28d4a3934728d5))
+* **dependabot:** fix schedule interval ([0b078b9](https://github.com/JanSzewczyk/semantic-release-config/commit/0b078b9ba94e0ebe0d598a11f5ef2c4d377a07b4))
+
 ## [2.3.1](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.3.0...v2.3.1) (2025-07-03)
 
 ### Bug Fixes
