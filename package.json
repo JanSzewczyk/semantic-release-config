@@ -1,6 +1,6 @@
 {
   "name": "@szum-tech/semantic-release-config",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Recommended setup for releasing semantically using GitHub Actions workflows compliance with the Szum-Tech standards.",
   "keywords": [
     "szum-tech",

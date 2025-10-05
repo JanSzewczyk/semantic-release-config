@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.3](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.3.2...v2.3.3) (2025-10-05)
+
+### Bug Fixes
+
+* **deps:** update eslint, semantic-release, typescript, and related dependencies ([707461b](https://github.com/JanSzewczyk/semantic-release-config/commit/707461b3e1464218271a70b437dd67c3f3fbf83c))
+
+### Build System
+
+* **deps-dev:** bump the project-dependencies group across 1 directory with 3 updates ([c150935](https://github.com/JanSzewczyk/semantic-release-config/commit/c15093534a335e7310af941ac6fe4f552a8c2f36))
+
 ## [2.3.2](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.3.1...v2.3.2) (2025-09-17)
 
 ### Bug Fixes
