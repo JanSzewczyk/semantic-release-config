@@ -57,8 +57,8 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^11.0.6",
-    "@semantic-release/npm": "^12.0.2",
+    "@semantic-release/github": "^12.0.0",
+    "@semantic-release/npm": "^13.1.1",
     "@semantic-release/release-notes-generator": "^14.1.0",
     "conventional-changelog-conventionalcommits": "^9.1.0"
   },
@@ -67,7 +67,7 @@
     "@szum-tech/prettier-config": "^1.6.2",
     "eslint": "^9.37.0",
     "prettier": "^3.6.2",
-    "semantic-release": "^24.2.9",
+    "semantic-release": "^25.0.0",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3"
   },
