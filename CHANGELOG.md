@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.5](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.3.4...v2.3.5) (2025-11-25)
+
+### Bug Fixes
+
+* **deps:** update npm and related dependencies to latest versions ([87bcaf2](https://github.com/JanSzewczyk/semantic-release-config/commit/87bcaf29ff1411f75646824c2f76f3ec1439c219))
+
+### Build System
+
+* **deps:** bump glob, semantic-release and @semantic-release/npm ([418c7ca](https://github.com/JanSzewczyk/semantic-release-config/commit/418c7cabeaf3af5f7ca524fcc300a373e52168f1))
+* **deps:** bump the github-dependencies group across 1 directory with 2 updates ([6684d94](https://github.com/JanSzewczyk/semantic-release-config/commit/6684d9402422f4c10bae87806d9838fc363730c0))
+
 ## [2.3.4](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.3.3...v2.3.4) (2025-11-21)
 
 ### Bug Fixes
