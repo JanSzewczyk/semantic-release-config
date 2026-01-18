@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.6](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.3.5...v2.3.6) (2026-01-18)
+
+### Bug Fixes
+
+* **deps:** update semantic-release and related dependencies to compatible versions ([fc2af86](https://github.com/JanSzewczyk/semantic-release-config/commit/fc2af86687ee9fa2b9a0721868574439fdfc8030))
+* **deps:** update semantic-release and related dependencies to latest versions ([94a9ddb](https://github.com/JanSzewczyk/semantic-release-config/commit/94a9ddb1892193fb93b111ca842233ff84ef916b))
+
+### Build System
+
+* **deps-dev:** bump storybook from 10.1.8 to 10.1.11 ([c348bbc](https://github.com/JanSzewczyk/semantic-release-config/commit/c348bbc677c0f3f24caae5d1b2febe24e8386e4f))
+* **deps:** bump actions/checkout in the github-dependencies group ([47168c9](https://github.com/JanSzewczyk/semantic-release-config/commit/47168c996024a7fcc7f5813478863f93118daddf))
+* **deps:** bump the project-dependencies group across 1 directory with 5 updates ([bdff25b](https://github.com/JanSzewczyk/semantic-release-config/commit/bdff25b713ede3a9787b0b6813d20958c8eb52e0))
+* **deps:** bump undici from 7.16.0 to 7.18.2 ([ab9b4be](https://github.com/JanSzewczyk/semantic-release-config/commit/ab9b4be953894b22022abc47bf0b9ab664e77a0b))
+
 ## [2.3.5](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.3.4...v2.3.5) (2025-11-25)
 
 ### Bug Fixes
