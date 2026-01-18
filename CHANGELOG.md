@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.7](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.3.6...v2.3.7) (2026-01-18)
+
+### Bug Fixes
+
+* **deps:** update semantic-release peer dependency version to >=25 ([c9600d9](https://github.com/JanSzewczyk/semantic-release-config/commit/c9600d9ef519dc8353c57fe2824836370fbf044d))
+
 ## [2.3.6](https://github.com/JanSzewczyk/semantic-release-config/compare/v2.3.5...v2.3.6) (2026-01-18)
 
 ### Bug Fixes
