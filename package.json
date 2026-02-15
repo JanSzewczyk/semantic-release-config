@@ -65,7 +65,7 @@
   "devDependencies": {
     "@szum-tech/eslint-config": "^2.1.15",
     "@szum-tech/prettier-config": "^1.6.5",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "prettier": "^3.8.0",
     "semantic-release": "^25.0.2",
     "tsup": "^8.5.0",
