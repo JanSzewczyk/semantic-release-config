@@ -32,7 +32,7 @@ export function getConfig({ features: { npmPublish = false, mdx = false } = {} }
               { type: "test", section: "Tests" },
               { type: "build", section: "Build System" },
               { type: "ci", section: "Continuous Integration" },
-              { type: "style", section: "Styles", hidden: true }
+              { type: "style", section: "Styles", effect: "hidden" }
             ]
           }
         }
