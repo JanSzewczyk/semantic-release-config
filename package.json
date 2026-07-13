@@ -66,7 +66,7 @@
     "@szum-tech/eslint-config": "^2.3.2",
     "@szum-tech/prettier-config": "^1.6.5",
     "eslint": "^10.7.0",
-    "prettier": "^3.8.0",
+    "prettier": "^3.9.5",
     "semantic-release": "^25.0.7",
     "tsup": "^8.5.0",
     "typescript": "^6.0.2"
