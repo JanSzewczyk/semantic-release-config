@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Set up Node 🟢
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
@@ -28,9 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Set up Node 🟢
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
@@ -52,9 +52,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Set up Node 🟢
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
@@ -71,8 +71,8 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Dependency Review 👀
-        uses: actions/dependency-review-action@v4
+        uses: actions/dependency-review-action@v5
         with:
           comment-summary-in-pr: on-failure
