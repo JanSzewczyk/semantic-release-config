@@ -2,12 +2,12 @@ import { defineConfig } from "tsup";
 
 export default defineConfig([
   {
-    entry: ["./src/**/*.js"],
-    outDir: "dist",
-    minify: true,
     clean: true,
+    entry: ["./src/**/*.js"],
     format: ["esm", "cjs"],
-    treeshake: true,
-    splitting: true
+    minify: true,
+    outDir: "dist",
+    splitting: true,
+    treeshake: true
   }
 ]);
