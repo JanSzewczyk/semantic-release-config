@@ -22,17 +22,17 @@ export function getConfig({ features: { npmPublish = false, mdx = false } = {} }
           preset: "conventionalcommits",
           presetConfig: {
             types: [
-              { type: "feat", section: "Features" },
-              { type: "fix", section: "Bug Fixes" },
-              { type: "perf", section: "Performance Improvements" },
-              { type: "revert", section: "Reverts" },
-              { type: "docs", section: "Documentation" },
-              { type: "chore", section: "Miscellaneous Chores" },
-              { type: "refactor", section: "Code Refactoring" },
-              { type: "test", section: "Tests" },
-              { type: "build", section: "Build System" },
-              { type: "ci", section: "Continuous Integration" },
-              { type: "style", section: "Styles", effect: "hidden" }
+              { section: "Features", type: "feat" },
+              { section: "Bug Fixes", type: "fix" },
+              { section: "Performance Improvements", type: "perf" },
+              { section: "Reverts", type: "revert" },
+              { section: "Documentation", type: "docs" },
+              { section: "Miscellaneous Chores", type: "chore" },
+              { section: "Code Refactoring", type: "refactor" },
+              { section: "Tests", type: "test" },
+              { section: "Build System", type: "build" },
+              { section: "Continuous Integration", type: "ci" },
+              { effect: "hidden", section: "Styles", type: "style" }
             ]
           }
         }
@@ -51,8 +51,8 @@ All notable changes to this project will be documented in this file. See
       [
         "@semantic-release/git",
         {
-          message: "release: ${nextRelease.gitTag} [skip ci]\n\n${nextRelease.notes}",
-          assets: [`CHANGELOG.${mdx ? "mdx" : "md"}`, "package.json"]
+          assets: [`CHANGELOG.${mdx ? "mdx" : "md"}`, "package.json"],
+          message: "release: ${nextRelease.gitTag} [skip ci]\n\n${nextRelease.notes}"
         }
       ],
       "@semantic-release/github"

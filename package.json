@@ -46,12 +46,14 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup",
-    "lint": "eslint .",
-    "lint:ci": "eslint . -o eslint-results.sarif -f @microsoft/eslint-formatter-sarif",
-    "lint:fix": "eslint . --fix",
-    "prettier:check": "prettier --check .",
-    "prettier:write": "prettier --write ."
+    "biome:check": "biome check .",
+    "biome:ci": "biome ci --reporter=github",
+    "biome:fix": "biome check --write .",
+    "biome:format": "biome format .",
+    "biome:format:fix": "biome format --write .",
+    "biome:lint": "biome lint .",
+    "biome:lint:fix": "biome lint --write .",
+    "build": "tsup"
   },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -63,10 +65,7 @@
     "conventional-changelog-conventionalcommits": "^10.4.1"
   },
   "devDependencies": {
-    "@szum-tech/eslint-config": "^2.3.2",
-    "@szum-tech/prettier-config": "^1.6.5",
-    "eslint": "^10.12.0",
-    "prettier": "^3.9.10",
+    "@biomejs/biome": "^2.5.15",
     "semantic-release": "^25.0.9",
     "tsup": "^8.5.0",
     "typescript": "^6.0.3"
