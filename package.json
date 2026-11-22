@@ -69,8 +69,8 @@
   "devDependencies": {
     "@biomejs/biome": "^2.5.15",
     "knip": "^6.41.0",
-    "semantic-release": "^25.0.9",
-    "tsup": "^8.5.0",
+    "semantic-release": "^26.0.1",
+    "tsup": "^9.0.0",
     "typescript": "^7.0.2"
   },
   "peerDependencies": {
